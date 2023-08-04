@@ -1,0 +1,149 @@
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  margin: auto;
+  border: 16px rgb(29, 146, 136) solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 254, 254);
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: rgb(248, 247, 247);
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 320px;
+  /*   height: 480px; */
+  background: rgb(255, 255, 255);
+}
+
+#project-title {
+  padding: 10px;
+}
+
+.search-container {
+  padding: 10px;
+}
+
+/* Style inputs, select elements and textareas */
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.contact-list ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+ul > li {
+  padding: 5px;
+  border-bottom-width: 2px;
+  border-bottom-color: #ddd;
+}
+
+li > a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.contact-item {
+  display: flex;
+  padding-left: 5px;
+  overflow-y: auto;
+}
+
+.contact-img {
+  flex-shrink: 0;
+}
+
+.contact-info {
+  margin: 10px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.bgimg,
+.contact-content {
+  background: #2f3c4f;
+  width: 300px;
+  /* height: 80px; */
+  margin: 0px auto;
+  text-align: center;
+  position: relative;
+}
+
+.bgimg img {
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+
+.bgimg h3 {
+  font-size: 16px;
+  margin: 0px;
+  padding-bottom: 5px;
+  color: #fff;
+}
+
+.bgimg span {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  padding: 5px;
+  margin: 8px;
+}
+
+.bgimg span > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-content {
+  background: #fbb040;
+  text-align: left;
+}
+
+.contact-content ul {
+  list-style-type: none;
+  margin-left: 8px;
+  padding: 0px;
+}
